@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "es2020",
+        "moduleResolution": "node",
+        "target": "es2017",
+        "jsx": "react",
+        "jsxFactory": "h",
+        "esModuleInterop": true,
+        "skipLibCheck": true
+    }
+}
