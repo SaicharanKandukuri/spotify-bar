@@ -1,8 +1,8 @@
 import { h, Fragment } from "preact";
 
 export default function TrackInfo({
-	track = "Not playing",
-	artist = "Spotify",
+	track = "Peacing out （￣︶￣）↗　",
+	artist = "zman-1x1",
 }) {
 	return (
 		<Fragment>
