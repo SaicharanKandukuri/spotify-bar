@@ -1,4 +1,11 @@
+
+![image](https://user-images.githubusercontent.com/68287637/140735238-99fda2b8-b24d-4a79-80ea-9c3c2deee311.png)
+
+<hr>
+
 # Spotify is playing now in your readme
+
+> Imported from https://github.com/akellbl4/spotify-badge
 
 If you want to share your love to music with the world you are in right place. You can share cunrrently playing track from you Spotify just with an image.
 
@@ -11,7 +18,7 @@ If you want to share your love to music with the world you are in right place. Y
 📭 **idle state** – not playing  
 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fakellbl4%2Fspotify-playing-now-readme&env=SPOTIFY_CLIENT_ID,SPOTIFY_CLIENT_SECRET,SPOTIFY_REFRESH_TOKEN,VERCEL_URL&envDescription=Spotify%20credentials%20should%20be%20provided.&envLink=https%3A%2F%2Fgithub.com%2Fakellbl4%2Fspotify-playing-now-readme%2Fblob%2Fmain%2FREADME.md&project-name=spotify-playing-now-readme)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fakellbl4%2Fspotify-playing-now-readme&env=SPOTIFY_CLIENT_ID,SPOTIFY_CLIENT_SECRET,SPOTIFY_REFRESH_TOKEN,VERCEL_URL&envDescription=Spotify%20credentials%20should%20be%20provided.&envLink=https%3A%2F%2Fgithub.com%2Fakellbl4%2Fspotify-playing-now-readme%2Fblob%2Fmain%2FREADME.md&project-name=spotify-playing-now-readme-badge)
 
 ### How to use
 #### Create an Spotify application for authentication
@@ -23,7 +30,7 @@ If you want to share your love to music with the world you are in right place. Y
 
 #### Deploy an application to Vercel
 
-- Open [this link](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fakellbl4%2Fspotify-playing-now-readme&env=SPOTIFY_CLIENT_ID,SPOTIFY_CLIENT_SECRET,SPOTIFY_REFRESH_TOKEN,VERCEL_URL&envDescription=Spotify%20credentials%20should%20be%20provided.&envLink=https%3A%2F%2Fgithub.com%2Fakellbl4%2Fspotify-playing-now-readme%2Fblob%2Fmain%2FREADME.md&project-name=spotify-playing-now-readme) for deploy app to Vercel
+- Open [this link](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2SaicharanKandukuri%2Fspotify-bar&env=SPOTIFY_CLIENT_ID,SPOTIFY_CLIENT_SECRET,SPOTIFY_REFRESH_TOKEN,VERCEL_URL&envDescription=Spotify%20credentials%20should%20be%20provided.&envLink=https%3A%2F%2Fgithub.com%2SaicharanKandukuri%2Fspotify-bar%2Fblob%2Fmain%2FREADME.md&project-name=spotify-playing-now-readme) for deploy app to Vercel
 - Click **Continue** on **Clone Git Repository** screen
 - Choose where you want to save code on **Create Git Repository** and Vercel will fork this repo automatically
 - Click **Continue** on **Import Project** screen
@@ -31,6 +38,8 @@ If you want to share your love to music with the world you are in right place. Y
 - Click **Deploy**
 
 #### Get Refresh Token
+
+> check out: https://benwiz.com/blog/create-spotify-refresh-token/
 
 - When application is deployed go to **Dashboard**
 - Copy your domain with `prod` label of your application
@@ -50,5 +59,3 @@ You can copy this snippet and change domain in the url to domain of your applica
 <img src="https://spotify-playing-now-readme.vercel.app/api/now-playing" width="540" height="52">
 ```
 
-
-### Development
