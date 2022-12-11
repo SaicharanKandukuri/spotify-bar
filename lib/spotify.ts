@@ -6,7 +6,13 @@ import {
 	REFRESH_TOKEN,
 	CLIENT_ID,
 	CLIENT_SECRET,
+	PROFILE_ENDPOINT,
 } from "../consts/spotify";
+
+type userInfo = {
+	profileUrl: string;
+	profileName: string;
+}
 
 type TrackInfo = {
 	progress: number | null;
@@ -52,6 +58,32 @@ function formatTrackInfo(trackInfo: SpotifyApi.CurrentlyPlayingResponse): TrackI
 	const externalUrl = item.external_urls.spotify;
 
 	return { progress, duration, track, artist, isPlaying, coverUrl,  externalUrl};
+}
+
+function formatProfileInfo(profileInfo: SpotifyApi.CurrentUsersProfileResponse): userInfo {
+	const { external_urls, display_name } = profileInfo;
+	const profileUrl = external_urls.spotify;
+	const profileName = display_name;
+
+	return { profileUrl, profileName };
+}
+
+export async function getProfile(): Promise<null | userInfo> {
+	const token = await getAccessToken();
+	const res = await fetch(PROFILE_ENDPOINT, {
+		headers: {
+			Authorization: `Bearer ${token}`,
+			"Content-Type": "application/x-www-form-urlencoded",
+		},
+	});
+
+	if (res.status !== 200) {
+		return null;
+	}
+	
+	const data: SpotifyApi.CurrentUsersProfileResponse = await res.json();
+
+	return formatProfileInfo(data);		
 }
 
 export async function getNowPlaying(): Promise<null | TrackInfo> {
