@@ -52,11 +52,19 @@ function formatTrackInfo(trackInfo: SpotifyApi.CurrentlyPlayingResponse): TrackI
 		return null;
 	}
 
-	const { duration_ms: duration, name: track, artists = [], album } = item;
+	const {
+		duration_ms: duration,
+		name: track,
+		artists = [],
+		album,
+		external_urls,
+	} = item as SpotifyApi.TrackObjectFull
+
 	const artist = artists.map(({ name }) => name).join(", ");
 	const coverUrl = album.images[album.images.length - 1]?.url;
-	const externalUrl = item.external_urls.spotify;
-
+	console.log(external_urls.spotify);
+	const externalUrl = typeof external_urls.spotify === null ? "None" : external_urls.spotify;
+	console.log(externalUrl);
 	return { progress, duration, track, artist, isPlaying, coverUrl,  externalUrl};
 }
 
