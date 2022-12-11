@@ -11,7 +11,7 @@
 	"devDependencies": {
 		"@types/classnames": "^2.2.11",
 		"@types/node": "^14.14.25",
-		"@types/spotify-api": "^0.0.7",
+		"@types/spotify-api": "^0.0.19",
 		"@vercel/node": "^1.9.0",
 		"prettier": "^2.2.1",
 		"vercel": "^28.8.0"
