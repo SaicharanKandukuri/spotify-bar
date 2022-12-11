@@ -21,7 +21,7 @@ type TrackInfo = {
 	artist: string;
 	isPlaying: boolean;
 	coverUrl: string;
-	externalUrl: string;
+	externalUrl: string | null;
 };
 
 export const basic = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString("base64");

@@ -8,8 +8,8 @@ export default async function nowPlaying(_: VercelRequest, res: VercelResponse) 
     const externalUrl = nowPlaying.externalUrl;
     const profileUrl = profile.profileUrl;
 
-    // if length of @externalUrl is not 0, redirect to @externalUrl
-    if (externalUrl.length !== 0) {
+    // if length of @externalUrl is not null, redirect to @externalUrl
+    if (externalUrl === null) {
         // redirect to the external URL
         console.log(`Redirecting to ${externalUrl}`);
         return res.redirect(externalUrl)
