@@ -17,6 +17,10 @@
 		{
 			"source": "/api/now-playing-redirect",
 			"destination": "/now-playing-link"
+		},
+		{
+			"source": "/api/user",
+			"destination": "/user"
 		}
 	]
 }
