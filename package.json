@@ -5,7 +5,7 @@
 	"dependencies": {
 		"classnames": "^2.2.6",
 		"isomorphic-unfetch": "^3.1.0",
-		"preact": "^10.5.12",
+		"preact": "^10.11.3",
 		"preact-render-to-string": "^5.1.12"
 	},
 	"devDependencies": {
