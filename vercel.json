@@ -6,5 +6,9 @@
 	"rewrites": [{
 		"source": "/api/now-playing",
 		"destination": "/now-playing"
+	},
+	{
+		"source": "/api/now-playing-link",
+		"destination": "/now-playing-link"
 	}]
 }
