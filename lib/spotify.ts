@@ -15,6 +15,7 @@ type TrackInfo = {
 	artist: string;
 	isPlaying: boolean;
 	coverUrl: string;
+	externalUrl: string;
 };
 
 export const basic = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString("base64");
@@ -48,8 +49,9 @@ function formatTrackInfo(trackInfo: SpotifyApi.CurrentlyPlayingResponse): TrackI
 	const { duration_ms: duration, name: track, artists = [], album } = item;
 	const artist = artists.map(({ name }) => name).join(", ");
 	const coverUrl = album.images[album.images.length - 1]?.url;
+	const externalUrl = item.external_urls.spotify;
 
-	return { progress, duration, track, artist, isPlaying, coverUrl };
+	return { progress, duration, track, artist, isPlaying, coverUrl,  externalUrl};
 }
 
 export async function getNowPlaying(): Promise<null | TrackInfo> {
