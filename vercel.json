@@ -1,14 +1,22 @@
 {
-	"redirects": [{
-		"source": "/",
-		"destination": "https://github.com/SaicharanKandukuri/spotify-bar"
-	}],
-	"rewrites": [{
-		"source": "/api/now-playing",
-		"destination": "/now-playing"
-	},
-	{
-		"source": "/api/now-playing-link",
-		"destination": "/now-playing-link"
-	}]
+	"redirects": [
+		{
+			"source": "/",
+			"destination": "https://github.com/SaicharanKandukuri/spotify-bar"
+		}
+	],
+	"rewrites": [
+		{
+			"source": "/api/now-playing",
+			"destination": "/now-playing"
+		},
+		{
+			"source": "/api/now-playing-link",
+			"destination": "/now-playing-link"
+		},
+		{
+			"source": "/api/now-playing-redirect",
+			"destination": "/now-playing-link"
+		}
+	]
 }
