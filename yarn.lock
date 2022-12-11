@@ -87,9 +87,9 @@ node-fetch@^2.6.1:
   dependencies:
     whatwg-url "^5.0.0"
 
-preact-render-to-string@^5.1.12:
-  version "5.1.12"
-  resolved "https://registry.npmjs.org/preact-render-to-string/-/preact-render-to-string-5.1.12.tgz"
+preact-render-to-string@^5.2.6:
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-5.2.6.tgz#0ff0c86cd118d30affb825193f18e92bd59d0604"
   dependencies:
     pretty-format "^3.8.0"
 

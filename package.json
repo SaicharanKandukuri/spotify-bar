@@ -6,7 +6,7 @@
 		"classnames": "^2.2.6",
 		"isomorphic-unfetch": "^3.1.0",
 		"preact": "^10.11.3",
-		"preact-render-to-string": "^5.1.12"
+		"preact-render-to-string": "^5.2.6"
 	},
 	"devDependencies": {
 		"@types/classnames": "^2.2.11",
