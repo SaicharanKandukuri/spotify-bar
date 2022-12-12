@@ -3,13 +3,13 @@
 	"version": "1.0.5",
 	"license": "MIT",
 	"dependencies": {
-		"classnames": "^2.2.6",
+		"classnames": "^2.3.2",
 		"isomorphic-unfetch": "^3.1.0",
 		"preact": "^10.11.3",
 		"preact-render-to-string": "^5.2.6"
 	},
 	"devDependencies": {
-		"@types/classnames": "^2.2.11",
+		"@types/classnames": "^2.3.1",
 		"@types/node": "^14.14.25",
 		"@types/spotify-api": "^0.0.19",
 		"@vercel/node": "^2.8.0",
