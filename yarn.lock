@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@cspotcode/source-map-support@^0.8.0":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz#00629c35a688e05a88b1cda684fb9d5e73f000a1"
+  dependencies:
+    "@jridgewell/trace-mapping" "0.3.9"
+
 "@edge-runtime/format@1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@edge-runtime/format/-/format-1.1.0.tgz"
@@ -15,6 +21,21 @@
   resolved "https://registry.npmjs.org/@edge-runtime/vm/-/vm-2.0.0.tgz"
   dependencies:
     "@edge-runtime/primitives" "2.0.0"
+
+"@jridgewell/resolve-uri@^3.0.3":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-3.1.0.tgz#2203b118c157721addfe69d47b70465463066d78"
+
+"@jridgewell/sourcemap-codec@^1.4.10":
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz#add4c98d341472a289190b424efbdb096991bb24"
+
+"@jridgewell/trace-mapping@0.3.9":
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.9.tgz#6534fd5933a53ba7cbf3a17615e273a0d1273ff9"
+  dependencies:
+    "@jridgewell/resolve-uri" "^3.0.3"
+    "@jridgewell/sourcemap-codec" "^1.4.10"
 
 "@mapbox/node-pre-gyp@^1.0.5":
   version "1.0.10"
@@ -67,6 +88,22 @@
     mkdirp "^1.0.4"
     path-browserify "^1.0.1"
 
+"@tsconfig/node10@^1.0.7":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node10/-/node10-1.0.9.tgz#df4907fc07a886922637b15e02d4cebc4c0021b2"
+
+"@tsconfig/node12@^1.0.7":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node12/-/node12-1.0.11.tgz#ee3def1f27d9ed66dac6e46a295cffb0152e058d"
+
+"@tsconfig/node14@^1.0.0":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node14/-/node14-1.0.3.tgz#e4386316284f00b98435bf40f72f75a09dabf6c1"
+
+"@tsconfig/node16@^1.0.2":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.3.tgz#472eaab5f15c1ffdd7f8628bd4c4f753995ec79e"
+
 "@types/classnames@^2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-2.3.1.tgz#3c2467aa0f1a93f1f021e3b9bcf938bd5dfdc0dd"
@@ -92,6 +129,10 @@
 "@vercel/build-utils@5.7.1":
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-5.7.1.tgz#985c927e8af265e73fa693c52a8e61447e030162"
+
+"@vercel/build-utils@5.7.3":
+  version "5.7.3"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-5.7.3.tgz#3fbe98f0d22686e1cbcd75cddea249657452436e"
 
 "@vercel/go@2.2.20":
   version "2.2.20"
@@ -125,7 +166,11 @@
   version "3.1.2"
   resolved "https://registry.npmjs.org/@vercel/node-bridge/-/node-bridge-3.1.2.tgz"
 
-"@vercel/node@2.8.1", "@vercel/node@^2.8.0":
+"@vercel/node-bridge@3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@vercel/node-bridge/-/node-bridge-3.1.3.tgz#7c8d83e18a4cb327def776810df182ecb148fbc0"
+
+"@vercel/node@2.8.1":
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.8.1.tgz#f794421196d2ff1dbf56a388850cca99dffd6d3b"
   dependencies:
@@ -139,6 +184,22 @@
     exit-hook "2.2.1"
     node-fetch "2.6.7"
     ts-node "8.9.1"
+    typescript "4.3.4"
+
+"@vercel/node@^2.8.4":
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.8.4.tgz#bdfc16446e17909c22806af77f7ba0947fb72dfa"
+  dependencies:
+    "@edge-runtime/vm" "2.0.0"
+    "@types/node" "14.18.33"
+    "@vercel/build-utils" "5.7.3"
+    "@vercel/node-bridge" "3.1.3"
+    "@vercel/static-config" "2.0.6"
+    edge-runtime "2.0.0"
+    esbuild "0.14.47"
+    exit-hook "2.2.1"
+    node-fetch "2.6.7"
+    ts-node "10.9.1"
     typescript "4.3.4"
 
 "@vercel/python@3.1.30":
@@ -187,7 +248,11 @@ abbrev@1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz"
 
-acorn@^8.6.0:
+acorn-walk@^8.1.1:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.2.0.tgz#741210f2e2426454508853a2f44d0ab83b7f69c1"
+
+acorn@^8.4.1, acorn@^8.6.0:
   version "8.8.1"
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.8.1.tgz"
 
@@ -375,6 +440,10 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0:
 convert-hrtime@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/convert-hrtime/-/convert-hrtime-3.0.0.tgz"
+
+create-require@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
 
 crypto-random-string@^2.0.0:
   version "2.0.0"
@@ -1209,6 +1278,24 @@ ts-morph@12.0.0:
     "@ts-morph/common" "~0.11.0"
     code-block-writer "^10.1.1"
 
+ts-node@10.9.1:
+  version "10.9.1"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.9.1.tgz#e73de9102958af9e1f0b168a6ff320e25adcff4b"
+  dependencies:
+    "@cspotcode/source-map-support" "^0.8.0"
+    "@tsconfig/node10" "^1.0.7"
+    "@tsconfig/node12" "^1.0.7"
+    "@tsconfig/node14" "^1.0.0"
+    "@tsconfig/node16" "^1.0.2"
+    acorn "^8.4.1"
+    acorn-walk "^8.1.1"
+    arg "^4.1.0"
+    create-require "^1.1.0"
+    diff "^4.0.1"
+    make-error "^1.1.1"
+    v8-compile-cache-lib "^3.0.1"
+    yn "3.1.1"
+
 ts-node@8.9.1:
   version "8.9.1"
   resolved "https://registry.npmjs.org/ts-node/-/ts-node-8.9.1.tgz"
@@ -1281,6 +1368,10 @@ url-parse-lax@^3.0.0:
 util-deprecate@^1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
+
+v8-compile-cache-lib@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz#6336e8d71965cb3d35a1bbb7868445a7c05264bf"
 
 vercel@^28.9.0:
   version "28.9.0"
