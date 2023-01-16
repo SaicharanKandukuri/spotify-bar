@@ -12,7 +12,7 @@
 		"@types/classnames": "^2.3.1",
 		"@types/node": "^18.11.17",
 		"@types/spotify-api": "^0.0.19",
-		"@vercel/node": "^2.8.0",
+		"@vercel/node": "^2.8.11",
 		"prettier": "^2.8.1",
 		"vercel": "^28.9.0"
 	},
