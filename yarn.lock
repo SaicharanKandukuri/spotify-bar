@@ -213,9 +213,9 @@
   version "18.11.18"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.18.tgz#8dfb97f0da23c2293e554c5a50d61ef134d7697f"
 
-"@types/spotify-api@^0.0.19":
-  version "0.0.19"
-  resolved "https://registry.npmjs.org/@types/spotify-api/-/spotify-api-0.0.19.tgz"
+"@types/spotify-api@^0.0.20":
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/@types/spotify-api/-/spotify-api-0.0.20.tgz#04486807175f7acfba3540213b5a4ca2a8270bd7"
 
 "@vercel/build-utils@6.0.0":
   version "6.0.0"
